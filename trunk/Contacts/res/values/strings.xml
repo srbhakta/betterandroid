@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contacts Live Folder</string>
+    <string name="liveFolderAll">All contacts</string>
+
+    <string name="liveFolderFavorites">Starred contacts</string>
+    <string name="liveFolderPhone">Contacts with phone numbers</string>
+
+<!-- Live folder label for all contacts -->
+    <string name="liveFolder_all_label">All Contacts</string>
+
+    <!-- Live folder label for only starred contacts -->
+    <string name="liveFolder_favorites_label">Starred</string>
+
+    <!-- Live folder label for all contacts with phone numbers -->
+    <string name="liveFolder_phones_label">Phones</string>    
+    
+</resources>
