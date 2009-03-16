@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="19dip"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:autoLink="all"
+    android:text="This is a skin for Open Home. Vist http://betterandroid.wordpress.com for help, howto and more skins."
+    />
+
+<Button android:id="@+id/more"
+	android:text="Find out more"
+	android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="19dip"
+    android:gravity="center" 
+/>    
+</RelativeLayout>

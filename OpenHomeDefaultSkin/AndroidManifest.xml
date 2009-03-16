@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.betterandroid.launcher2.glossyminimalism"
+      android:versionCode="2"
+      android:versionName="1.1">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name=".Help"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--  this is the action Open Home will look for when scanning for skins -->
+                <action android:name="com.betterandroid.launcher2.skins" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest> 
