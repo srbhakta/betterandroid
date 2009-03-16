@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+	android:autoLink="all"  
+	android:textSize="20dip"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="A background service will be started to query for digg stories every 10 minutes. You may manually start or stop the service. You must use this with Open Home's Live Folder feature. We will be releasing full source codes of this project. Visit our site to find out more at http://betterandroid.wordpress.com."
+    android:layout_margin="5dip"
+    />
+<Button
+	android:id="@+id/start"
+	android:layout_margin="5dip"
+	android:text="Start Service"
+	android:layout_gravity="center"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+/>
+<Button
+	android:id="@+id/stop"
+	android:layout_margin="5dip"
+	android:text="Stop Service"
+	android:layout_gravity="center"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+/>
+</LinearLayout>
+
