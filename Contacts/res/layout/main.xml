@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+	android:autoLink="all"  
+	android:textSize="20dip"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="This is a demostration of the Live Folder feature that is only available in Cupcake. You can download Open Home to try it out. To use go to Open Home, long press the screen and choose Live Folder. For a video demo go to http://betterandroid.wordpress.com"
+    />
+</LinearLayout>
+

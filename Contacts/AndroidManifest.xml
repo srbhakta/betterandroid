@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.betterandroid.livefolder"
+      android:versionCode="2"
+      android:versionName="1.1">
+      <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher_contacts_phones">
+        <activity android:name=".Contacts"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- LIVE FOLDERS -->
+        <activity
+            android:name=".ContactsLiveFolders$AllContacts"
+            android:label="@string/liveFolderAll"
+            android:icon="@drawable/ic_launcher_contacts">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContactsLiveFolders$FavoriteContacts"
+            android:label="@string/liveFolderFavorites"
+            android:icon="@drawable/ic_launcher_contacts_starred">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+		<provider android:authorities="com.betterandroid.openhome.livefolder.contacts"
+		android:multiprocess="true"
+            android:name="ContactsProvider" />
+        
+    </application>
+</manifest> 
