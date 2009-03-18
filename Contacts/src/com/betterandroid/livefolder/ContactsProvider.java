@@ -74,7 +74,7 @@ public class ContactsProvider extends ContentProvider {
       
       try {
         String filter = type == TYPE_FAVORITE ? People.STARRED +" = 1" : null;
-        allContacts = getContext().getContentResolver().query(People.CONTENT_URI, CONTACTS_COLUMN, filter, null, "order by "+People.DISPLAY_NAME);
+        allContacts = getContext().getContentResolver().query(People.CONTENT_URI, CONTACTS_COLUMN, filter, null, People.DISPLAY_NAME);
         while(allContacts.moveToNext()){
           String contactedDate = "Time contacted: "+allContacts.getInt(2);
           boolean isStarred = allContacts.getInt(3) > 0;
